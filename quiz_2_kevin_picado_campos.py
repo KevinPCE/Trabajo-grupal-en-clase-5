@@ -19,3 +19,4 @@ opcion1 = (temperatura2*(5/9))*-32
 opcion2 = (temperatura2*(5/9))*+32
 opcion1 = (temperatura3*(5/9))*-32
 opcion2 = (temperatura3*(5/9))*+32
+print=("primer temperatura")
