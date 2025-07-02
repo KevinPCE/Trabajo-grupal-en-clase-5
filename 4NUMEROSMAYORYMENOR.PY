@@ -13,4 +13,4 @@ def número_mayor():
     elif num4> num1 and num4> num2 and num4> num3:
         print(f"El valor mayor es: {num4}")
 
-    
+    #ahora buscaremos el menor
