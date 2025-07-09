@@ -6,6 +6,6 @@ def divisores(numero):
             divisores_lista.append(i)
       return divisores_lista
 
-# Ejemplo de uso:
+#uso:
 numero = n
 print(f"Los divisores de {numero} son: {divisores(numero)}")

@@ -1,38 +1,33 @@
 def main():
-    numeros_negativos = []
-    numeros_positivos = []
-    
-    print("Ingrese 10 números enteros (pueden ser positivos o negativos):")
-    
-    for i in range(1, 11):
+      numeros_negativo = []
+      numeros_positivo = []
+      print("Ingrese 10 números enteros pueden ser positivos o negativos pero deben de ser enteros:")
+      for i in range(1, 11):
         while True:
             try:
-                numero = int(input(f"Ingrese el número {i}: "))
+                numero = int(input(f"Ingrese número {i}: "))
                 if numero < 0:
-                    numeros_negativos.append(numero)
+                    numeros_negativo.append(numero)
                 elif numero > 0:
-                    numeros_positivos.append(numero)
+                    numeros_positivo.append(numero)
                 break
             except ValueError:
-                print("Error: Por favor ingrese un número entero válido.")
+                print(" Por favor ingrese un número entero válido.")   
+# Calcular sumatoria negativs
+      sumatoria_negativos = sum(numeros_negativo)
+# Calular promedi positivos
+      if len(numeros_positivo) > 0:
+        promedio_positivo = sum(numeros_positivo) / len(numeros_positivo)
+      else:
+        promedio_positivo = 0    
+# resultados
+      print("\nResultados:")
+      print(f"Sumatoria de números negativos: {sumatoria_negativos}")
     
-    # Calcular sumatoria de negativos
-    sumatoria_negativos = sum(numeros_negativos)
-    
-    # Calcular promedio de positivos
-    if len(numeros_positivos) > 0:
-        promedio_positivos = sum(numeros_positivos) / len(numeros_positivos)
-    else:
-        promedio_positivos = 0
-    
-    # Mostrar resultados
-    print("\nResultados:")
-    print(f"Sumatoria de números negativos: {sumatoria_negativos}")
-    
-    if len(numeros_positivos) > 0:
-        print(f"Promedio de números positivos: {promedio_positivos:.2f}")
-    else:
-        print("No se ingresaron números positivos para calcular el promedio.")
+      if len(numeros_positivo) > 0:
+        print(f"Promedio de números positivos: {promedio_positivo:.2f}")
+      else:
+        print("No se ingresaron números positivos no se puede calcular el promedio.")
 
 if __name__ == "__main__":
     main()
