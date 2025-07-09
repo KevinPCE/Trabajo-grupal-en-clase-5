@@ -38,7 +38,7 @@ nombre = ""
 # Crear la ventana principal
 ventana_principal = tk.Tk()
 ventana_principal.title("Quiz de Python")
-ventana_principal.geometry("600x400")
+ventana_principal.geometry("700x400")
 
 opcion_elegida = tk.IntVar()
 
