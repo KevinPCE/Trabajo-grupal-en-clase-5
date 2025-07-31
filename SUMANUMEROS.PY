@@ -1,9 +1,15 @@
+#1. Escriba un programa usando Python 3 que permita al usuario ingresar 10 números enteros, que pueden ser positivos o negativos.
+#Al finalizar, mostrar la sumatoria de los números negativos y el promedio de los positivos.
+#Notas:
+#No olvidar que no es posible dividir por cero, por lo que es necesario evitar que el programa arroje un error 
+# si no se ingresaron números positivos o letras.
+
 def main():
     suma_negativos = 0
     contador_positivos = 0
     numeros_positivos = []
     
-    print("Ingrese 10 números enteros (pueden ser positivos o negativos):")
+    #print("Ingrese 10 números enteros, pueden ser positivos o negativos")
     
     for i in range(1, 11):
         while True:
