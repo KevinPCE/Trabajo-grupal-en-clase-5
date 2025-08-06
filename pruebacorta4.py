@@ -11,17 +11,17 @@
 print("Favor ingrese 7 nombres o apellidos:")
 nombres_apellidos = []
 for i in range(7):
-      print(f"El nombre o apellido es el número {i+1}")
+      print(f"El nombre o Apellido es el número {i+1}")
       nombre1 = input(f"Ingrese el nombre o apellido {i+1}:")
       nombres_apellidos.append(nombre1)
 
 # Verifica si todos comienzn con la misma leta
 primera_letra = nombres_apellidos[0][0].lower()  # se toma la primer letra del primer nombre
-comienzan_igual =    all(nombre1[0].lower()== primera_letra for nombre1 in nombres_apellidos)
+comienzan_igual =    all(nombre1[0].lower() == primera_letra for nombre1 in nombres_apellidos)
 
 # verificar si todos terminan con la mima letra
 ultima_letra = nombres_apellidos[0][-1].lower()  # Tomamos la última letra del primer nombre
-terminan_igual =   all(nombre1[-1].lower() == ultima_letra for nombre1 in nombres_apellidos)
+terminan_igual =   all(nombre1[-1].lower() ==   ultima_letra for nombre1 in nombres_apellidos)
 
 # Mostrar True si alguno de los dos casos se cumpl False si no
 #print("comienzan igual" or "terminan_igual")
