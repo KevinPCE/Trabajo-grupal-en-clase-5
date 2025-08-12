@@ -1,9 +1,9 @@
 def inicializar_cadenas():
-    """Inicializa y retorna las cuatro cadenas vacías"""
+    #Inicializa y retorna las cuatro cadenas vacías#
     return {"mult5_digitos": "", "mult5_numeros": "", "contiene_100": "", "contiene_1": ""}
 
 def procesar_numero(numero, cadenas):
-    """Procesa un número y lo agrega a las cadenas correspondientes según los criterios"""
+    #Procesa un número y lo agrega a las cadenas correspondientes según los criterios
     num_str = str(numero)
     num_int = int(numero)
     
@@ -26,25 +26,25 @@ def procesar_numero(numero, cadenas):
     return cadenas
 
 def agregar_a_cadena(cadena, numero):
-    """Agrega un número a una cadena existente con formato de separación por comas"""
+    #Agrega un número a una cadena existente con formato de separación por comas
     if cadena:
         return f"{cadena}, {numero}"
     return numero
 
 def debe_terminar(numero):
-    """Determina si el programa debe terminar basado en el número ingresado"""
+    #Determina si el programa debe terminar basado en el número ingresado
     num_int = int(numero)
     return num_int % 20 == 0 or num_int < 0
 
 def mostrar_resultados(cadenas):
-    """Muestra los resultados formateados con el terminador UH"""
+    #Muestra los resultados formateados con el terminador UH
     print(f"Números cuya cantidad de dígitos es múltiplo de 5: {cadenas['mult5_digitos']}, UH")
     print(f"Números que son múltiplos de 5: {cadenas['mult5_numeros']}, UH")
     print(f"Números que contienen el 100: {cadenas['contiene_100']}, UH")
     print(f"Números que contienen el 1: {cadenas['contiene_1']}, UH")
 
 def main():
-    """Función principal que orquesta todo el programa"""
+    #Función principal que orquesta todo el programa
     cadenas = inicializar_cadenas()
     
     while True:
